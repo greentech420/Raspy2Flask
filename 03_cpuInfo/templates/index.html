@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+	RasbeppyPi CPU情報をここに表示します<br>
+	日付／時刻:{{date}}<br>
+	温度[℃]：{{temp}}<br>
+	クロック周波数[MHz]:{{clock}}<br>
+	CPU電圧[V]:{{volts}}<br>
+	メモリ使用量(CPU):{{cpu_m}}<br>
+	メモリ使用量(GPU):{{gpu_m}}<br>
+
+	<br>
+	<input type="button"  value="更新" onclick="reload()">
+
+	<script>
+		function reload(){
+			location.reload();
+		}
+	</script>
+{% endblock %}

@@ -1,0 +1,84 @@
+input[type="checkbox"]:checked + label.check > div {
+  border: 1px solid transparent;
+  left: 44px;
+}
+input[type="checkbox"] + label.check > div {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 22px;
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
+  background-color: #ffffff;
+  transition: 0.2s;
+}
+input[type="checkbox"]:checked + label.check::before {
+  content: "ON";
+  position: absolute;
+  left: 6px;
+  right: auto;
+  color: #ffffff;
+}
+
+input[type="checkbox"] + label.check::before {
+  content: "OFF";
+  position: absolute;
+  top: 4px;
+  left: auto;
+  right: 6px;
+}
+
+input[type="checkbox"]:checked + label.check {
+  border: 1px solid #4db4e4;
+  background-color: #4db4e4;
+}
+
+input[type="checkbox"] + label.check {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  color: #969696;
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+h2 {
+  /*線の種類（実線） 太さ 色*/
+  border-bottom: solid 3px black;
+}
+
+
+
+h1 {
+	color:#6594e0;
+	border-bottom:dashed 2px #6594e0;
+}
+
+body {
+	background-color: #f0fefe;
+}
+
+
+.wrapper{
+    min-height: 90vh;
+    position: relative;/*←相対位置*/
+}
+
+footer{
+    width: 100%;
+    background-color: #89c7de;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+	教室内の環境情報をここに表示します<br>
+	日付／時刻:{{date}}<br>
+	温度[℃]：{{temp}}<br>
+	湿度[%]:{{humi}}<br>
+	気圧[hPa]:{{press}}<br>
+
+
+	<br>
+	<input type="button"  value="更新" onclick="reload()">
+
+	<script>
+		function reload(){
+			location.reload();
+		}
+	</script>
+{% endblock %}
